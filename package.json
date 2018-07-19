@@ -1,0 +1,9 @@
+{
+  "name": "lukasmalkmus.io",
+  "version": "1.0.0",
+  "description": "Personal blog and portfolio",
+  "repository": "https://github.com/lukasmalkmus/lukasmalkmus.io.git",
+  "author": "Lukas Malkmus <mail@lukasmalkmus.com>",
+  "license": "MIT",
+  "private": false
+}

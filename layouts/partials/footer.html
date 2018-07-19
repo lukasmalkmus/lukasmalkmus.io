@@ -1,0 +1,14 @@
+<footer id="footer">
+    {{ if .Site.Social }}
+        {{ partial "social.html" . }}
+    {{ end }}
+    <p class="small">
+    {{ with .Site.Params.copyright }}
+        {{ . | markdownify }}
+    {{ else }}
+        © Copyright {{ now.Format "2006"}} · Made with <i class="fas fa-heart" aria-hidden="true"></i>&nbsp;by {{ .Site.Params.Author }}
+        <br>
+        {{ "Favicon made by [Icon Pond](https://www.flaticon.com/authors/popcorns-arts) from [flaticon.com](https://flaticon.com/)" | markdownify }}
+    {{ end }}
+    </p>
+</footer>

@@ -1,0 +1,37 @@
+language: generic
+
+os:
+  - osx
+
+cache:
+  directories:
+    - $HOME/Library/Caches/Homebrew
+
+install:
+  - brew install awscli git hugo wget || true
+  - wget -qO- https://github.com/tdewolff/minify/releases/download/v2.3.5/minify_2.3.5_darwin_amd64.tar.gz | tar xvz -C /tmp
+  - mv /tmp/minify /usr/local/bin/minify
+
+before_script:
+  - git submodule update --init --recursive
+  - hugo version
+
+script:
+  - hugo --gc --cleanDestinationDir --ignoreCache
+  - minify -r -v --match=\.html -o=public public
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: lukasmalkmus.io
+  region: eu-central-1
+  skip_cleanup: true
+  local_dir: public
+  cache_control: "max-age=86400"
+  on:
+    branch: master
+
+after_deploy:
+  - aws configure set preview.cloudfront true
+  - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"

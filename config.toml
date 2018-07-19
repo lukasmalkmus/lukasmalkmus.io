@@ -1,0 +1,37 @@
+# General settings
+baseURL = "https://lukasmalkmus.io/"
+languageCode = "en-us"
+title = "Lukas Malkmus"
+theme = "cactus-plus-plus"
+googleAnalytics = "UA-122724074-1"
+
+[params]
+	# General
+	author = "Lukas Malkmus"
+	description = "Developer & Software Engineer"
+	bio = "Developer & Software Engineer"
+
+	# RSS
+	enableRSS = true
+	
+	# ToC
+	enableToc = false
+
+	# Post summaries
+	enableSummary = true
+	useDescriptionReplaceSummary = true
+
+    # Google Analytics
+	enableGoogleAnalytics = true
+
+	# Post settings
+	showLatestPosts = false
+
+	# Error page
+	title404 = "404"
+	subtitle404 = ""
+
+# Social links
+[social]
+	github = "https://github.com/lukasmalkmus"
+	twitter = "https://twitter.com/lukasmalkmus"
