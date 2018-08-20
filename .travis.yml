@@ -8,17 +8,14 @@ cache:
     - $HOME/Library/Caches/Homebrew
 
 install:
-  - brew install awscli git hugo wget || true
-  - wget -qO- https://github.com/tdewolff/minify/releases/download/v2.3.5/minify_2.3.5_darwin_amd64.tar.gz | tar xvz -C /tmp
-  - mv /tmp/minify /usr/local/bin/minify
+  - brew install awscli hugo || true
 
 before_script:
   - git submodule update --init --recursive
   - hugo version
 
 script:
-  - hugo --gc --cleanDestinationDir --ignoreCache
-  - minify -r -v --match=\.html -o=public public
+  - hugo --gc --cleanDestinationDir --ignoreCache --minify
 
 deploy:
   provider: s3
