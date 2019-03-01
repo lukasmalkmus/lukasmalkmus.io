@@ -23,9 +23,8 @@ I'm *Lukas Malkmus*, a Software Engineer from Frankfurt am Main, Germany.
 
 ### Résumé
 
-* 22 years old
-* Born in Germany
+* 23 years old, from Germany
 * Currently studying Computer Science at the University of Applied Sciences in
   Giessen, Germany
-* Working as a Freelancer
+* Currently [@axiom](https://axiom.co)
 * Hobbies include Skydiving, Rowing, Running and some Biking
