@@ -1,5 +1,5 @@
 # General settings
-baseURL = "https://lukasmalkmus.io/"
+baseURL = "https://nervous-keller-89e355.netlify.com"
 languageCode = "en-us"
 title = "Lukas Malkmus"
 theme = "cactus-plus-plus"
