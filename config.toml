@@ -31,6 +31,9 @@ showLatestPosts = false
 title404 = "404"
 subtitle404 = ""
 
+[imaging]
+quality = 75
+
 # Social links
 [social]
 github = "https://github.com/lukasmalkmus"
