@@ -14,12 +14,12 @@ documented this way.
 
 ## License
 
-© Lukas Malkmus, 2018
+© Lukas Malkmus, 2020
 
 <!-- Links -->
 [Hugo]: https://gohugo.io/
 [personal blog and portfolio website]: https://lukasmalkmus.io/
 
 <!-- Badges -->
-[build]: https://travis-ci.com/lukasmalkmus/lukasmalkmus.io
-[build_badge]: https://travis-ci.com/lukasmalkmus/lukasmalkmus.io.svg
+[build]: https://app.netlify.com/sites/lukasmalkmus/deploys
+[build_badge]: https://api.netlify.com/api/v1/badges/57a5166a-45e1-4dea-91bd-2c3311b5c891/deploy-status
