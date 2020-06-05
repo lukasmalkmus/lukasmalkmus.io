@@ -38,13 +38,7 @@ Some information on how this site is build and hosted:
 * The theme is forked from the [Cactus Plus Theme], modified and released as
   [Cactus Plus Plus]
 * The sources for this site are publicly availabe [on GitHub][site_repo]
-* The site is hosted on AWS in an S3 bucket behind CloudFront (AWS CDN)
-* [Travis-CI][travis] builds and deploys the site
-  * The cron feature is enabled. Building of the site happens every 24 hours.
-    This is used to publish posts with a date in the future which has not been
-    reached yet and requires no human interaction
-  * After deployment to S3 Travis CI invalidates the CloudFront cache to make
-    sure the previously deployed files are served correctly
+* The site is hosted on [Netlify]
 
 <!-- Links -->
 [Cactus Plus Theme]: https://github.com/nodejh/hugo-theme-cactus-plus
@@ -54,4 +48,4 @@ Some information on how this site is build and hosted:
 [knowledge_meme]: https://media.makeameme.org/created/knowledge-bm3yvd.jpg
 [makeameme]: https://makeameme.org/
 [site_repo]: https://github.com/lukasmalkmus/hugo-theme-cactus-plus-plus
-[travis]: https://travis-ci.com/
+[Netlify]: https://netlify.com/
